@@ -1,0 +1,28 @@
+.parkingsWrap {
+  width: 100%;
+}
+
+.parkingsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: 40%;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+.parkingData {
+  border-color: var(--color-black-light);
+}
+
+.parkingsDataWrapper {
+  margin-inline: auto;
+  width: 60%;
+}

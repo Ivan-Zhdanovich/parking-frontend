@@ -1,0 +1,53 @@
+.mainPageWrap {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1900px;
+    height: calc(100vh - 154px);
+   background-color: var(--color-light-spring-green);
+}
+.mainPageContainer {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  max-width: 1600px;
+ 
+  &__title {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+    &__subtitle {
+       text-align: center;
+      @media (max-width: 780px) {
+        font-size: x-large;
+      }
+
+      @media (max-width: 660px) {
+        font-size: large;
+      }
+    }
+
+    &__formWrapper {
+        display: flex;
+    }
+  
+}
+
+.mainPageContent {
+  width: 88%;
+}
+.mainPicture {
+ width: auto;
+ height: 100%;
+ float: right;
+ margin: 0;
+
+  @media (max-width: 1250px) {
+    & {
+      width: 660px;
+    }
+  }
+}
