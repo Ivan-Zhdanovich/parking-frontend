@@ -49,10 +49,14 @@ export default function AboutApp() {
     <div className={styles.parkingsWrap}>
       <div className={styles.parkingsContainer}>
         <h1 className={styles.parkingsContainer__title}>Парковки для Ваc</h1>
-        <p className={styles.parkingsContainer__subtitle}>
-          Список всех парковок
-        </p>
-        <div className={styles.parkingsDataWrapper}>
+        <h2 className={styles.parkingsContainer__subtitle}>
+          Список парковочных мест
+        </h2>
+        <div className={styles.parkingsDataContainer}>
+        <div className={styles.parkingDataColumnsTitleWrapper}>
+        <p className={styles.parkingsDataColumnsTitle}>парковочное место</p>
+        <p className={styles.parkingsDataColumnsTitle}>адрес</p>
+        </div>
           {parkings &&
             parkings.map((parkingData: IParking, index: Key) => (
               <ol className={styles.parkingData} key={index}>
